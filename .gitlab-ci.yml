@@ -2,5 +2,5 @@ deploy:
   image: python:latest
   script:
   - pip install awscli
-  - aws s3 sync ./dist/ s3://www.codejunkers.in
-  - aws s3 sync ./dist/ s3://codejunkers.in
+  - aws s3 sync ./ s3://www.codejunkers.in
+  - aws s3 sync ./ s3://codejunkers.in
